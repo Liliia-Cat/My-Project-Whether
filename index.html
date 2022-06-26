@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <title>Weather</title>
+  </head>
+  <body>
+     <div class="container">
+      <div class="weather-app">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-6">
+              <input
+                type="search"
+                placeholder="Type a city.."
+                autofocus="on"
+                autocomplete="off"
+                id="city-input"
+                class="form-control shadow-sm"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-primary shadow-sm w-100"
+              />
+            </div>
+            <div class="col-3">
+              <button
+                class="btn btn-success w-100"
+                id="current-location-button"
+              >
+                Current
+              </button>
+            </div>
+          </div>
+        </form>
+        <h1 id="city"></h1>
+        <ul>
+          <li id="date"></li>
+          <li id="description"></li>
+        </ul>
+        <div class="row">
+          <div class="col-6">
+            <div class="clearfix">
+              <div class="float-left">
+                <span class="temperature" id="temperature"></span
+                ><span class="units">°C</span>
+              </div>
+            </div>
+          </div>
+
+      <div class="row row-cols-1 row-cols-md-5 g-4">
+        <div class="col col-card-border">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title">19 May</h3>
+              <p class="card-text">🌤 +20</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title">20 May</h3>
+              <p class="card-text">🌦+26</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title">21 May</h3>
+              <p class="card-text">🌥+22</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title">22 May</h3>
+              <p class="card-text">🌩+17</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title">23 May</h3>
+              <p class="card-text">🌦+20</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row-footer">
+        
+        <div class="col">💨Wind <span id="wind"></span> km/h</div>
+        <div class="col">💧Humidity <span id="humidity"></span>%</div>
+        <div class="col">🌅Sunrise 04:56</div>
+        <div class="col">🌇Sunset 20:15</div>
+      </div>
+    </div>
+    
+    <script src="./script/script.js"></script>
+  </body>
+  
+</html>
