@@ -46,21 +46,28 @@
             </div>
           </div>
         </form>
+        <div class="overview">
         <h1 id="city"></h1>
         <ul>
           <li id="date"></li>
           <li id="description"></li>
         </ul>
+        </div>
         <div class="row">
           <div class="col-6">
-            <div class="clearfix">
+            <div class="clearfix weather-temperature">
+              <img src="" alt="clear"id="icon" class="float-left"/>
+               
               <div class="float-left">
                 <span class="temperature" id="temperature"></span
-                ><span class="units">°C</span>
+                ><span class="units" >
+                  <a href="#" id="celsius-link" class="active">°C</a> |
+                    <a href="#" id="fahrenheit-link">°F</a></span
+                  > 
               </div>
             </div>
           </div>
-
+        </div>
       <div class="row row-cols-1 row-cols-md-5 g-4">
         <div class="col col-card-border">
           <div class="card h-100">
@@ -110,6 +117,8 @@
         <div class="col">🌅Sunrise 04:56</div>
         <div class="col">🌇Sunset 20:15</div>
       </div>
+
+      <div class="weather-forecast" id="forecast"></div>
       <p class="developer"><a href="https://github.com/Liliia-Cat/My-Project-Whether/">Open-source code</a>, by Liliia Sviderska</p>
       
     </div>
