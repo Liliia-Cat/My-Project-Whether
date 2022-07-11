@@ -6,10 +6,12 @@ body {
 
 h1 {
     color: rgb(17, 17, 179);
-    font-size: 24px;
+    font-size: 54px;
     font-weight: 100;
     line-height: 28px;
     margin: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 ul {
@@ -27,6 +29,10 @@ li {
     list-style: none;
 }
 
+li:first-letter {
+    text-transform: capitalize;
+}
+
 .weather-app {
     border: 1px solid #dadde1;
     padding: 15px;
@@ -35,31 +41,31 @@ li {
     max-width: 600px;
 }
 
-.weather-icon {
+
+.weather-icon img {
     height: 64px;
     width: 64px;
     margin-right: 10px;
+   margin: 0;
 }
 
-.temperature {
+.weather-temperature strong {
     color: rgb(17, 17, 179);
-    font-size: 50px;
+    font-size: 54px;
     font-weight: 400;
     line-height: 1;
 }
 
-.units {
+.weather-temperature .units {
     position: relative;
-    top: -34px;
+    top: -28px;
     color: rgb(17, 17, 179);
+   
 }
 
 .search-form {
+    margin-top: 15px;
     margin-bottom: 20px;
-}
-.row-cols-1 {
-    padding: 30px 0;
-    color: rgb(17, 17, 179);
 }
 
  p {
@@ -69,9 +75,16 @@ li {
  .row-footer {
     color: rgb(17, 17, 179);
     font-size: 22px;
-    padding: 50px 0;
+    padding: 30px;
  }
 
  .developer {
     font-size: 15px;
+ }
+
+ .col-2 {
+    color: rgb(17, 17, 179);
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 50px;
  }

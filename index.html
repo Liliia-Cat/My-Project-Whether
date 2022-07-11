@@ -11,6 +11,7 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <title>Weather</title>
   </head>
@@ -19,7 +20,7 @@
       <div class="weather-app">
         <form class="search-form" id="search-form">
           <div class="row">
-            <div class="col-6">
+            <div class="col-8">
               <input
                 type="search"
                 placeholder="Type a city.."
@@ -36,14 +37,14 @@
                 class="form-control btn btn-primary shadow-sm w-100"
               />
             </div>
-            <div class="col-3">
+            <!-- <div class="col-3">
               <button
                 class="btn btn-success w-100"
                 id="current-location-button"
               >
                 Current
               </button>
-            </div>
+            </div> -->
           </div>
         </form>
         <div class="overview">
@@ -56,66 +57,22 @@
         <div class="row">
           <div class="col-6">
             <div class="clearfix weather-temperature">
-              <img src="" alt="clear"id="icon" class="float-left"/>
-               
-              <div class="float-left">
-                <span class="temperature" id="temperature"></span
+              <img src="" alt="clear" id="icon" class="float-left"/>
+               <span class="float-left">
+                <strong id="temperature"></strong
                 ><span class="units" >
                   <a href="#" id="celsius-link" class="active">°C</a> |
-                    <a href="#" id="fahrenheit-link">°F</a></span
-                  > 
-              </div>
+                    <a href="#" id="fahrenheit-link">°F</a></span> 
+               </span>
             </div>
           </div>
         </div>
-      <div class="row row-cols-1 row-cols-md-5 g-4">
-        <div class="col col-card-border">
-          <div class="card h-100">
-            <div class="card-body">
-              <h3 class="card-title">19 May</h3>
-              <p class="card-text">🌤 +20</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <h3 class="card-title">20 May</h3>
-              <p class="card-text">🌦+26</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <h3 class="card-title">21 May</h3>
-              <p class="card-text">🌥+22</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <h3 class="card-title">22 May</h3>
-              <p class="card-text">🌩+17</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <div class="card-body">
-              <h3 class="card-title">23 May</h3>
-              <p class="card-text">🌦+20</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      
       <div class="row row-footer">
         
         <div class="col">💨Wind <span id="wind"></span> km/h</div>
         <div class="col">💧Humidity <span id="humidity"></span>%</div>
-        <div class="col">🌅Sunrise 04:56</div>
-        <div class="col">🌇Sunset 20:15</div>
+        
       </div>
 
       <div class="weather-forecast" id="forecast"></div>
